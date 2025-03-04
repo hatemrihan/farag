@@ -3,7 +3,6 @@ import Image from 'next/image';
 import bfImage from '../assets/images/bf-image.jpg';
 import elanoImage from '../assets/images/elano-image.jpg';
 import boundImage from '../assets/images/bound-image.jpg';
-import project2Image from '../assets/images/project-2.jpg';
 import project5Image from '../assets/images/project-5.jpg';
 
 interface CarouselImage {
@@ -17,7 +16,6 @@ const HomeImageCarousel: React.FC = () => {
     { id: 1, src: bfImage, alt: "" },
     { id: 2, src: elanoImage, alt: "" },
     { id: 3, src: boundImage, alt: "" },
-    { id: 4, src: project2Image, alt: "" },
     { id: 5, src: project5Image, alt: "" }
   ];
 
