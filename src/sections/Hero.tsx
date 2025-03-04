@@ -38,11 +38,11 @@ entranceAnimation();
       <motion.h1
       initial={{opacity: 0 }}
       animate={{opacity: 1, }}
-      className="text-4xl mt-40 md:text-6xl lg:text-6xl md:mt-0 " 
+      className="text-4xl mt-40 md:text-6xl lg:text-6xl md:mt-0 text-center uppercase" 
       ref={scope}>
       All in one place where is strength,mobility and bodybuilding.
       </motion.h1>
-      <div className="flex flex-col md:flex-row md:items-center mt-8 items-start gap-6">
+      <div className="flex flex-col md:flex-row md:items-center mt-8 items-start gap-6 justify-center sm:items-center">
         <motion.div
         initial={{opacity: 0, y:'100%'}}
         animate={{opacity:1, y:0}}
@@ -50,9 +50,10 @@ entranceAnimation();
         
         >
            <a href="#pricing" onClick={handleClickMobileNavItem}>
-     <Button variant="secondary"  iconAfter={
+     <Button variant="secondary" 
+     iconAfter={
      <div className="overflow-hidden size-5"  onClick={() =>setIsOpen(!isOpen)}>
-      <div className="h-5 w-10 flex group-hover/button:-translate-x-1/2 transition-transform duration-500">
+      <div className="h-5 w-10 flex group-hover/button:-translate-x-1/2 transition-transform duration-500 text-center items-center justify-center">
       <svg xmlns="http://www.w3.org/2000/svg"
        fill="none"
         viewBox="0 0 24 24"
@@ -83,7 +84,7 @@ entranceAnimation();
 }
 
 >
-      <span className="text-white">View my Programs</span>
+      <span className="text-white text-center items-center">View my Programs</span>
       
 </Button>
 </a>
