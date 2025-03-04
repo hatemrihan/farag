@@ -131,12 +131,12 @@ if (isOpen) {
   }
  
   return <header>
-    <div className="fixed top-0 left-0 w-full h-0 overflow-hidden bg-stone-900 z-10" ref={navScope}>
+    <div className="fixed top-0 left-0 w-full h-0 overflow-hidden  z-10" ref={navScope}>
 <nav className="mt-20 flex flex-col">
   {navItems.map(({label, href})=> (
-       <a href={href} key={label} className="text-stone-200 border-t last:border-b border-stone-800 py-8 group/nav-items relative isolate" onClick={handleClickMobileNavItem}>
-        <div className="container !max-w-full flex  items-center justify-between ">
-          <div className="absolute w-full h-0 bg-stone-800 group-hover/nav-items:h-full transition-all duration-500 bottom-0 -z-10 "></div>
+       <a href={href} key={label} className="text-stone-200 border-t last:border-b border-stone-800 py-8 group/nav-items relative isolate bg-stone-900" onClick={handleClickMobileNavItem}>
+        <div className="container !max-w-full flex  items-center justify-between bg-stone-900">
+          <div className="absolute w-full h-0 bg-stone-900 group-hover/nav-items:h-full transition-all duration-500 bottom-0 -z-10"></div>
     <span className="text-3xl group-hover/nav-items:pl-4 transition-all duration-500 ">{label}</span>
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
@@ -146,25 +146,26 @@ if (isOpen) {
   ))}
 </nav>
     </div>
-    <div className="fixed top-0 left-0 w-full mix-blend-difference z-10 bg-stone-900">
-    <div className="fixed top-0 left-0 w-full z-10 bg-stone-900">
+    <div className="fixed top-0 left-0 w-full  z-10 bg-stone-900 ">
+    <div className="fixed top-0 left-0 w-full z-10 text-white">
 
 </div>
-<div className="container !max-w-full bg-stone-900">
-<div className="flex justify-between h-20 items-center bg-stone-900">
+<div className="container !max-w-full bg-stone-900 text-white">
+<div className="flex justify-between h-20 items-center bg-stone-900 text-white">
 <div>
 <a href="/">
-<span className="text-xl font-bold uppercase text-white">NE&nbsp; </span>
+<span className="text-xl font-bold uppercase text-white cursor-pointer hover:text-stone-100 transition-all duration-500">NE</span>
 </a>
 </div>
+
 </div>
 </div>
     </div>
-    <div className="fixed top-0 left-0 w-full z-10">
+    <div className="fixed top-0 left-0 w-full z-10  text-white">
     <div className="container !max-w-full">
   <div className="flex justify-end h-20 items-center">
    
-    <div className="flex items-center gap-4">
+    <div className="flex items-center gap-4 bg-stone-900">
     <div className="size-11 border border-stone-400 rounded-full inline-flex items-center justify-center bg-stone-900" onClick={() =>setIsOpen(!isOpen)}
       >
 
