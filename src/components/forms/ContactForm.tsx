@@ -44,16 +44,16 @@ const ContactForm = () => {
     <Label className='text-white'>Phone Number</Label>
     <Input className='bg-stone-900 text-white' name='phone' placeholder='+20 1234567899' />
     </div>
-    <div className='grid space-y-3'>
+    <div className='grid space-y-3 text-stone-500'>
     <Label className='text-white'>Program</Label>
 <Select name='Program'>
 <SelectTrigger className="w-[180px] bg-stone-900 text-white">
-<SelectValue placeholder="Select a Program"/>
+<SelectValue className='text-stone-700' placeholder="Select a Program"/>
 </SelectTrigger>
 <SelectContent>
 <SelectGroup>
 <SelectLabel >Program</SelectLabel>
-<SelectItem value="Guc">Pt On Ground</SelectItem>
+<SelectItem value="pt on Ground">Pt On Ground</SelectItem>
 <SelectItem value="elementfive">Pt online</SelectItem>
 <SelectItem value="Online">Nutrition Plan</SelectItem>
 </SelectGroup>
