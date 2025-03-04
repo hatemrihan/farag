@@ -1,4 +1,3 @@
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     typescript:{
@@ -8,8 +7,17 @@ const nextConfig = {
         ignoreDuringBuilds:true,
     },
     images: {
-        unoptimized:true
+        unoptimized: true,
+        domains: ['localhost'],
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: '**',
+            },
+        ],
     }
 };
+
+export default nextConfig;
 
 
