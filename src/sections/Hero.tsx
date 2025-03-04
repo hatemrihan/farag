@@ -1,13 +1,9 @@
 "use client";
 import { FC, useEffect, useRef, useState } from "react";
-import heroImage from "../assets/images/hero-Image.jpg";
 import Image from 'next/image';
 import Button from '@/components/Button';
 import { motion, useScroll, useTransform } from "motion/react";
 import useTextRevealAnimation from "@/hooks/useTextRevealAnimation";
-
-
-
 
 const Hero: FC = () => {
   const scrollingDiv = useRef<HTMLDivElement>(null);
@@ -106,7 +102,13 @@ entranceAnimation();
      <motion.div className="mt-20 md:mt-0 md:size-full md:absolute md:right-0 max-md:!w-full" style={{
       width:portraitWidth,
      }}>
-     <Image src= {heroImage} alt="Hero-Image" className=" size-full object-cover" />
+     <Image 
+       src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1000&auto=format&fit=crop"
+       alt="Hero-Image" 
+       width={800}
+       height={600}
+       className="size-full object-cover" 
+     />
      </motion.div>
      </div>
      </div>
