@@ -53,7 +53,7 @@ const ContactForm = () => {
 <SelectContent>
 <SelectGroup>
 <SelectLabel >Program</SelectLabel>
-<SelectItem value="Guc">Pt On Ground</SelectItem>
+<SelectItem value="pt on Ground">Pt On Ground</SelectItem>
 <SelectItem value="elementfive">Pt online</SelectItem>
 <SelectItem value="Online">Nutrition Plan</SelectItem>
 </SelectGroup>
