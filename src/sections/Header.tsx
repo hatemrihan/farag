@@ -146,7 +146,7 @@ if (isOpen) {
   ))}
 </nav>
     </div>
-    <div className="fixed top-0 left-0 w-full mix-blend-difference backdrop-blur-md  z-10">
+    <div className="fixed top-0 left-0 w-full mix-blend-difference backdrop-blur-md  z-10 bg-stone-900">
     <div className="fixed top-0 left-0 w-full z-10 ">
 
 </div>
