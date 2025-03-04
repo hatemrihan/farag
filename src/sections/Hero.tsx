@@ -32,7 +32,7 @@ entranceAnimation();
    
 
   return <section>
-    <div className="grid md:grid-cols-12 md:h-screen items-stretch sticky top-0">
+    <div className="grid md:grid-cols-12 md:h-screen items-stretch sticky top-0 bg-stone-900">
       <div className="md:col-span-7 flex flex-col justify-center">
         <div className="container !max-w-full">
       <motion.h1
@@ -40,7 +40,7 @@ entranceAnimation();
       animate={{opacity: 1, }}
       className="text-4xl mt-40 md:text-6xl lg:text-6xl md:mt-0 text-center uppercase" 
       ref={scope}>
-      All in one place where is strength,mobility and bodybuilding.
+      where All in one place strength,mobility and bodybuilding.
       </motion.h1>
       <div className="flex flex-col md:flex-row md:items-center mt-8 items-start gap-6 justify-center sm:items-center">
         <motion.div
