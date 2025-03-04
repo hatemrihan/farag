@@ -14,7 +14,7 @@ const navItems = [
     href: "#intro",
   },
   {
-    label: "What we do",
+    label: "What we offer",
     href: "#projects",
   },
   {
@@ -154,7 +154,7 @@ if (isOpen) {
 <div className="flex justify-between h-20 items-center">
 <div>
 <a href="/">
-<span className="text-xl font-bold uppercase text-white">IFLAG&nbsp; </span>
+<span className="text-xl font-bold uppercase text-white">NE&nbsp; </span>
 </a>
 </div>
 </div>
@@ -165,7 +165,7 @@ if (isOpen) {
   <div className="flex justify-end h-20 items-center">
    
     <div className="flex items-center gap-4">
-    <div className="size-11 border border-stone-400 rounded-full inline-flex items-center justify-center bg-stone-200" onClick={() =>setIsOpen(!isOpen)}
+    <div className="size-11 border border-stone-400 rounded-full inline-flex items-center justify-center bg-stone-900" onClick={() =>setIsOpen(!isOpen)}
       >
 
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -179,13 +179,11 @@ if (isOpen) {
     }} />
 </svg>
     </div>
-    <a href="#contact"><Button variant="primary" className="hidden md:inline-flex">Join Us Now</Button></a>
+    <a href="#contact"><Button variant="primary" className="hidden md:inline-flex">Join Me Now</Button></a>
   </div>
 </div>
 </div>
     </div>
-
-
   </header>;
   
 };

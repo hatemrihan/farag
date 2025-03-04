@@ -18,16 +18,16 @@ const ContactForm = () => {
     <CardContent className='mt-5 bg-stone-900'>
         <TabsList className='grid grid-cols-2 bg-stone-700'>
             <TabsTrigger value='sales' className='text-black '>
-                Get Appointment
+                Join Now
             </TabsTrigger>
             <TabsTrigger value='Support' className='text-black'>
-                Support
+                Buissness
             </TabsTrigger>
         </TabsList>
         <TabsContent value='sales'>
-<p className='text-muted-foreground text-sm text-center'>Get Your Appointment Session Now</p>
+<p className='text-muted-foreground text-sm text-center'>Get Your Appointment Now</p>
 <form
- action="https://getform.io/f/bqokmylb" 
+ action="https://getform.io/f/bxowzoea" 
  method="POST" 
 //  action={GetAppointmentAction}
  className='flex flex-col mt-5 gap-y-4'>
@@ -38,37 +38,37 @@ const ContactForm = () => {
     </div>
     <div className='grid space-y-1'>
     <Label className='text-white'>Email</Label>
-    <Input className='bg-stone-900 text-white' name='email' placeholder='iflagbars@example.com' />
+    <Input className='bg-stone-900 text-white' name='email' placeholder='NaderEmad@example.com' />
     </div>
     <div className='grid space-y-1'>
     <Label className='text-white'>Phone Number</Label>
     <Input className='bg-stone-900 text-white' name='phone' placeholder='+20 1234567899' />
     </div>
-    <div className='flex flex-row gap-x-5 items-center space-y-1 sm:flex-col sm:gap-y-2 sm:space-y-0 sm:items-start'>
-    <Label className='text-white'>Branch</Label>
-<Select name='branch'>
+    <div className='grid space-y-3'>
+    <Label className='text-white'>Program</Label>
+<Select name='Program'>
 <SelectTrigger className="w-[180px] bg-stone-900 text-white">
-<SelectValue placeholder="Select a branch"/>
+<SelectValue placeholder="Select a Program"/>
 </SelectTrigger>
 <SelectContent>
 <SelectGroup>
-<SelectLabel >Branch</SelectLabel>
-<SelectItem value="Guc">Guc</SelectItem>
-<SelectItem value="elementfive">ElementFive</SelectItem>
-<SelectItem value="Online">Online</SelectItem>
+<SelectLabel >Program</SelectLabel>
+<SelectItem value="Guc">Pt On Ground</SelectItem>
+<SelectItem value="elementfive">Pt online</SelectItem>
+<SelectItem value="Online">Nutrition Plan</SelectItem>
 </SelectGroup>
 </SelectContent>
-</Select><Label className='text-white'>Session Date</Label>
-<Select name='Session Date'>
+</Select><Label className='text-white'>Subscription</Label>
+<Select name='Subscription'>
 <SelectTrigger className="w-[180px bg-stone-900 text-white">
-<SelectValue placeholder="Select a Session Date"/>
+<SelectValue placeholder="Select a Subscription"/>
 </SelectTrigger>
 <SelectContent>
 <SelectGroup>
-<SelectLabel>Session Date</SelectLabel>
-<SelectItem value="4:30pm">4:30 pm - preIftar</SelectItem>
-<SelectItem value="9:00pm">9:00 pm</SelectItem>
-<SelectItem value="10:00pm">10:00 pm</SelectItem>
+<SelectLabel>Subscription</SelectLabel>
+<SelectItem value="1 month">1 month</SelectItem>
+<SelectItem value="3 months">3 months</SelectItem>
+<SelectItem value="6 months">6 months</SelectItem>
 </SelectGroup>
 </SelectContent>
 </Select>
@@ -90,7 +90,7 @@ const ContactForm = () => {
     </div>
     <div className='grid space-y-1'>
     <Label className='text-white'>Email</Label>
-    <Input className='bg-stone-900 text-white' name='email' placeholder='iflagbars@example.com' />
+    <Input className='bg-stone-900 text-white' name='email' placeholder='NaderEmad@example.com' />
     </div>
     <div className='grid space-y-1'>
     <Label className='text-white'>Phone Number</Label>

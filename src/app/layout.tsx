@@ -12,8 +12,8 @@ const archivo = Archivo({
 });
 
 export const metadata: Metadata = {
-  title: "IFLAG Website",
-  description: "Created with HATUM",
+  title: "Nader Emad",
+  description: "Where All in One",
 };
 
 export default function RootLayout({
@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(`antialiased bg-stone-200 text-stone-900 ${archivo.variable} font-sans`)}>
+      <body className={cn(`antialiased bg-stone-900 text-stone-50 ${archivo.variable} font-sans`)}>
       {/* <ThemeProvider attribute="class" defaultTheme="black">
         
         </ThemeProvider> */}

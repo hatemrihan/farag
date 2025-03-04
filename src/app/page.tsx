@@ -7,9 +7,9 @@ import Intro from "@/sections/Intro";
 import Pricing from "@/sections/Pricing";
 import Projects from "@/sections/Projects";
 import Testimonials from "@/sections/Testimonials";
-import All from "@/sections/All";
 import Part from "@/sections/Part";
 import ContactForm from "@/components/forms/ContactForm";
+import PortfolioPage from "@/sections/PortofolioPage";
 
 
 
@@ -22,12 +22,11 @@ export default function Home() {
          <Hero />
          <Intro />
          <Testimonials />
-         <Part />
-         <All />
          <Projects /> 
-         <FAQs />
-
          <Pricing />
+         <Part />
+<PortfolioPage />
+<FAQs />
         <ContactForm />
               <Footer />
       </>

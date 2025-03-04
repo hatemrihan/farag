@@ -9,22 +9,22 @@ import Image from "next/image";
 
 const projects = [
   {
-    name: "Our Training",
+    name: "Training",
     image: image1,
   },
 
   {
-    name: "Our Events",
+    name: "Testimonials",
     image: image3,
   },
   {
-    name: "Our Activities",
+    name: "Activities",
     image: image4,
   },
-  {
-    name: "Our Branches",
-    image: image5,
-  },
+  // {
+  //   name: "Our Branches",
+  //   image: image5,
+  // },
 ];
 
 const Projects: FC = () => {
@@ -34,7 +34,7 @@ const Projects: FC = () => {
       <div className="mt-10 md:mt-16 lg:mt-20">
         {projects.map(( { name, image}) => (
         <a href="#faqs" key={name} className="border-t last:border-b border-stone-400 border-dotted md:py-8 lg:py-10 py-6 flex flex-col relative group/project ">
-          <div className="absolute bottom-0 left-0 w-full h-0 group-hover/project:h-full transition-all duration-700 bg-stone-300"></div>
+          <div className="absolute bottom-0 left-0 w-full h-0 group-hover/project:h-full transition-all duration-700 bg-stone-700"></div>
 
           <div className="relative">
             <div className="aspect-video md:hidden sm:hidden"> 

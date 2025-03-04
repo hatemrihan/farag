@@ -1,11 +1,9 @@
 "use client";
 import { FC, useEffect, useRef, useState } from "react";
-import heroImage from "@/assets/images/hero-image.jpg";
+import heroImage from "@/assets/images/hero-Image.jpg";
 import Image from 'next/image';
 import Button from '@/components/Button';
-
 import { motion, useScroll, useTransform } from "motion/react";
-
 import useTextRevealAnimation from "@/hooks/useTextRevealAnimation";
 
 
@@ -43,8 +41,7 @@ entranceAnimation();
       animate={{opacity: 1, }}
       className="text-4xl mt-40 md:text-6xl lg:text-6xl md:mt-0 " 
       ref={scope}>
-        iFlag Bars is a specialized calisthenics gym that focuses on building strength, agility, and endurance through
-      bodyweight exercises.
+      All in one place where is strength,mobility and bodybuilding.
       </motion.h1>
       <div className="flex flex-col md:flex-row md:items-center mt-8 items-start gap-6">
         <motion.div
@@ -87,9 +84,11 @@ entranceAnimation();
 }
 
 >
-      <span className="text-black">View Our Programs</span>
+      <span className="text-white">View my Programs</span>
+      
 </Button>
 </a>
+
 </motion.div>
 <motion.div
   initial={{opacity: 0, y:'100%'}}
