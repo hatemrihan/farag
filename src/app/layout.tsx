@@ -12,7 +12,7 @@ const archivo = Archivo({
 });
 
 export const metadata: Metadata = {
-  title: "Nader Emad",
+  title: "Hatum",
   description: "Where All in One",
 };
 

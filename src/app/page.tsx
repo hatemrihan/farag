@@ -1,15 +1,12 @@
 "use client";
-import FAQs from "@/sections/FAQs";
-import Footer from "@/sections/Footer";
-import Header from "@/sections/Header";
-import Hero from "@/sections/Hero";
-import Intro from "@/sections/Intro";
-import Pricing from "@/sections/Pricing";
-import Projects from "@/sections/Projects";
-import Testimonials from "@/sections/Testimonials";
-import Part from "@/sections/Part";
-import ContactForm from "@/components/forms/ContactForm";
-import PortfolioPage from "@/sections/PortofolioPage";
+
+import AnotherFAQs from "@/sections/AnotherFAQs";
+import AnotherHeader from "@/sections/AnotherHeader";
+import AnotherHero from "@/sections/AnotherHero";
+import AnotherPortofolioPage from "@/sections/AnotherPortofolioPage";
+import NewFooter from "@/sections/NewFooter";
+import NewPart from "@/sections/NewPart";
+
 
 
 
@@ -18,17 +15,23 @@ export default function Home() {
 
    return (
       <>
-         <Header />
+       <AnotherHeader />
+      <AnotherHero />
+      <AnotherFAQs />
+          <AnotherPortofolioPage />
+          <NewPart />
+          <NewFooter />
+         {/* <Header />
          <Hero />
-         <Intro />
-         <Testimonials />
+         <Intro /> */}
+         {/* <Testimonials />
          <Pricing />
          <Projects /> 
          <Part />
 <PortfolioPage />
 <FAQs />
-        <ContactForm />
-              <Footer />
+        <ContactForm /> */}
+              {/* <Footer /> */}
       </>
    );
 }
