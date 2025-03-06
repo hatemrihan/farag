@@ -5,7 +5,7 @@ import boundImage from '../assets/images/bound-image.jpg';
 import useTextRevealAnimation from '@/hooks/useTextRevealAnimation';
 import { useInView } from 'motion/react';
 import heroImage from '../assets/images/hero-image.jpg'
-import nadaImage from '../assets/images/nada-image.jpg'
+import nadaImage from '../assets/images/nada-image.JPG'
 
 const AnotherPortofolioPage = () => {
   const {scope, entranceAnimation} =useTextRevealAnimation();

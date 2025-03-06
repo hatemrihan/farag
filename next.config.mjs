@@ -20,10 +20,18 @@ const nextConfig = {
     },
     webpack: (config) => {
         config.module.rules.push({
-            test: /\.(png|jpg|jpeg|gif|svg)$/i,
+            test: /\.(png|jpg|jpeg|gif|svg|JPG|PNG)$/i,
             type: 'asset/resource',
         });
         return config;
+    },
+    // Add trailing slashes for better compatibility
+    trailingSlash: true,
+    // Ensure proper asset handling
+    assetPrefix: '/hatum/',
+    // Disable image optimization for static export
+    images: {
+        unoptimized: true,
     }
 };
 

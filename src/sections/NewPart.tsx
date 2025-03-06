@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import React from 'react';
-import runImage from '../assets/images/run-image.jpg';
-import teamImage from '../assets/images/team-image.jpg';
+import runImage from '../assets/images/run-image.JPG';
+import teamImage from '../assets/images/team-image.JPG';
 import photoImage from '../assets/images/photo-image.jpg';
-import teametnenImage from '../assets/images/teametnen-image.jpg';
+import teametnenImage from '../assets/images/teametnen-image.JPG';
 
 const PastSpread: React.FC =() =>{
   return (
