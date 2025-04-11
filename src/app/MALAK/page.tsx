@@ -1,0 +1,128 @@
+'use client';
+
+import Image from 'next/image';
+import React from 'react';
+import girlImage from '@/assets/images/girl-image.jpg';
+import girlTwoImage from '@/assets/images/girlTwo-image.jpg';
+import girlThirdImage from '@/assets/images/girlThird-image.jpg';
+import girlFourthImage from '@/assets/images/girlFourth-image.jpg';
+import girlFifthImage from '@/assets/images/girlFifth-image.jpg';
+import girlSixthImage from '@/assets/images/girlSixth-image.jpg';
+import Nav from '@/sections/Nav';
+import Footer from '@/sections/Footer';
+
+const MULAPage = () => {
+  return (
+    <main className="min-h-screen bg-stone-100 text-black relative">
+      <Nav />
+      
+      {/* Content container with vertical lines that don't extend to footer */}
+      <div className="relative">
+        {/* Vertical solid lines - contained within a specific height */}
+        <div className="absolute inset-x-0 top-0 z-0 pointer-events-none" style={{ height: 'calc(100% - 100px)' }}>
+          <div className="h-full w-full max-w-7xl mx-auto relative">
+            {/* Left to right vertical lines */}
+            <div className="absolute left-0 border-l border-gray-200 h-full"></div>
+            <div className="absolute left-[20%] border-l border-gray-200 h-full"></div>
+            <div className="absolute left-[40%] border-l border-gray-200 h-full"></div>
+            <div className="absolute left-[60%] border-l border-gray-200 h-full"></div>
+            <div className="absolute left-[80%] border-l border-gray-200 h-full"></div>
+            <div className="absolute right-0 border-l border-gray-200 h-full"></div>
+          </div>
+        </div>
+        
+        {/* Campaign Header Section */}
+        <div className="w-full flex flex-col items-center justify-center pt-20 pb-10 px-4 relative z-10">
+          <p className="text-sm uppercase tracking-widest mb-4">MALAK</p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal text-center">CIVIC PHTOSHOOT</h1>
+        </div>
+        
+        {/* Main Image - narrower with max-width */}
+        <div className="w-full flex justify-center mb-8 relative z-10">
+        <div className="w-full max-w-4xl mx-auto px-4 md:px-8 mb-4">
+            <div className="relative aspect-[4/3] w-full">
+              <Image
+                src={girlTwoImage}
+                alt="MULA Campaign Detail 1"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+          <div className="w-full max-w-4xl mx-auto px-4 md:px-8 mb-4">
+            <div className="relative aspect-[4/3] w-full">
+              <Image
+                src={girlThirdImage}
+                alt="MULA Campaign Detail 1"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+        </div>
+        
+        {/* Gallery Section - Single Column Layout */}
+        <div className="w-full flex flex-col items-center relative z-10">
+          {/* First Gallery Image */}
+          <div className="w-full max-w-4xl mx-auto px-4 md:px-8 mb-4">
+            <div className="relative aspect-[4/3] w-full">
+              <Image
+                src={girlFourthImage}
+                alt="MULA Campaign Detail 1"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+          
+          {/* Second Gallery Image */}
+          <div className="w-full max-w-4xl mx-auto px-4 md:px-8 mb-4">
+            <div className="relative aspect-[4/3] w-full">
+              <Image
+                src={girlFifthImage}
+                alt="MULA Campaign Detail 2"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+          
+          {/* Additional Gallery Images */}
+          <div className="w-full max-w-4xl mx-auto px-4 md:px-8 mb-4">
+            <div className="relative aspect-[4/3] w-full">
+              <Image
+                src={girlImage}
+                alt="MULA Campaign Detail 3"
+                fill
+                className="object-cover"
+              />
+             
+  
+            </div>
+          </div>
+          
+          <div className="w-full max-w-4xl mx-auto px-4 md:px-8 mb-4">
+            <div className="relative aspect-[4/3] w-full">
+              <Image
+                src={girlSixthImage}
+                alt="MULA Campaign Detail 4"
+                fill
+                className="object-cover"
+              />
+             
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      {/* Footer spacer */}
+      <div className="py-8"></div>
+      
+      <Footer />
+    </main>
+  );
+};
+
+export default MULAPage; 

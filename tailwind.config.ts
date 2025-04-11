@@ -6,6 +6,7 @@ const config: Config = {
         "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
         "./src/sections/**/*.{js,ts,jsx,tsx,mdx}",
         "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+        "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     theme: {
     	screens: {
@@ -74,9 +75,42 @@ const config: Config = {
     			lg: 'var(--radius)',
     			md: 'calc(var(--radius) - 2px)',
     			sm: 'calc(var(--radius) - 4px)'
-    		}
+    		},
+    		keyframes: {
+    			float: {
+    				'0%': { transform: 'translate(0px, 0px)' },
+    				'33%': { transform: 'translate(10px, -10px)' },
+    				'66%': { transform: 'translate(-10px, 10px)' },
+    				'100%': { transform: 'translate(0px, 0px)' },
+    			},
+    			'float-reverse': {
+    				'0%': { transform: 'translate(0px, 0px)' },
+    				'33%': { transform: 'translate(-10px, -10px)' },
+    				'66%': { transform: 'translate(10px, 10px)' },
+    				'100%': { transform: 'translate(0px, 0px)' },
+    			},
+    			pulse: {
+    				'0%, 100%': { opacity: '1' },
+    				'50%': { opacity: '0.5' },
+    			},
+    			'fade-in': {
+    				'0%': { opacity: '0' },
+    				'100%': { opacity: '1' },
+    			},
+    			'rotate-slow': {
+    				'0%': { transform: 'rotate(0deg)' },
+    				'100%': { transform: 'rotate(360deg)' },
+    			}
+    		},
+    		animation: {
+    			float: 'float 8s ease-in-out infinite',
+    			'float-reverse': 'float-reverse 8s ease-in-out infinite',
+    			pulse: 'pulse 2s ease-in-out infinite',
+    			'fade-in': 'fade-in 0.5s ease-out',
+    			'rotate-slow': 'rotate-slow 15s linear infinite',
+    		},
     	}
     },
-    plugins: [require("tailwindcss-animate")],
+    plugins: [],
 };
 export default config;

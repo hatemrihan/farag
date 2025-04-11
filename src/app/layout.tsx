@@ -1,35 +1,41 @@
 import type { Metadata } from "next";
-import {Archivo } from 'next/font/google';
+import { Archivo } from 'next/font/google';
 import "./globals.css";
 import { cn } from "@/components/lib/utils";
-
+import Providers from "@/components/Providers";
 
 const archivo = Archivo({
   display: "swap",
-  weight : "variable",
+  weight: "variable",
   subsets: ["latin"],
   variable: "--archivo-font",
 });
 
 export const metadata: Metadata = {
-  title: "Hatum",
-  description: "Where All in One",
+  title: "FARAG - Creative Portfolio",
+  description: "A discovery engine for creatives",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body className={cn(`antialiased bg-stone-900 text-stone-50 ${archivo.variable} font-sans`)}>
-      {/* <ThemeProvider attribute="class" defaultTheme="black">
-        
-        </ThemeProvider> */}
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <link
+          rel="preload"
+          href="/videos/TEASERRR2.mp4"
+          as="video"
+          type="video/mp4"
+        />
+      </head>
+      <body className={cn(`antialiased ${archivo.variable} font-sans`)}>
+        <Providers>
           {children}
-        </body> 
+        </Providers>
+      </body>
     </html>
-   
   );
 }

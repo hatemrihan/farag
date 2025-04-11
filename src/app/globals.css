@@ -74,6 +74,58 @@
   }
 }
 
+/* Theme Toggle Styles */
+.theme-toggle {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  z-index: 50;
+}
+
+.btn {
+  transition: stroke 0.3s ease;
+}
+
+.masker {
+  transition: r 0.5s ease;
+}
+
+.sun, .moon {
+  transition: transform 0.5s ease;
+}
+
+/* Force background colors */
+html.dark body {
+  background-color: #000 !important;
+  color: white !important;
+}
+
+html.light body {
+  background-color: #eee !important;
+  color: black !important;
+}
+
+/* Global transitions for theme changes */
+body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Force all tailwind dark mode classes to transition smoothly */
+* {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+/* SVG filter for blending theme-changed elements */
+.dark-mode-blend {
+  mix-blend-mode: difference;
+}
+
 
 
 
