@@ -6,13 +6,13 @@ import { StaticImageData } from 'next/image';
 import girlSixthImage from '@/assets/images/girlSixth-image.jpg';
 // Import your other images properly
 import fayaImage from '@/assets/images/faya-image.jpg';
-import sobhImage from '@/assets/images/sobh-image.JPG';
+import sobhImage from '@/assets/images/sobh-image.jpg';
 import mazenImage from '@/assets/images/mazen-image.jpg';
 import redGuyImage from '@/assets/images/redguy-image.jpg';
 import girlFourthImage from '@/assets/images/girlFourth-image.jpg';
 import groupThreeImage from '@/assets/images/groupThree-image.jpg';
 import groupTwoImage from '@/assets/images/groupTwo-image.jpg';
-import sobhThreeImage from '@/assets/images/sobhThree-image.JPG';
+import sobhThreeImage from '@/assets/images/sobhThree-image.jpg';
 import fayaThreeImage from '@/assets/images/fayaThree-image.jpg';
 import mazenThreeImage from '@/assets/images/mazenThree-image.jpg';
 import girlThirdImage from '@/assets/images/girlThird-image.jpg';

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from 'react';
+import React, { useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import First from '@/sections/First'
 import About from '@/sections/About'
@@ -11,7 +11,7 @@ import Design from '@/sections/Design';
 import AnotherPortofolioPage from '@/sections/AnotherPortofolioPage';
 import NewFooter from '@/sections/NewFooter';
 
-export default function Home() {
+function HomeContent() {
   const searchParams = useSearchParams();
   
   useEffect(() => {
@@ -39,6 +39,14 @@ export default function Home() {
       <NewFooter />
       <Footer />
     </main>
-  )
+  );
+}
+
+export default function Home() {
+  return (
+    <Suspense fallback={<Loading />}>
+      <HomeContent />
+    </Suspense>
+  );
 }
 

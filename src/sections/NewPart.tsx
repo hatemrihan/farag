@@ -7,7 +7,7 @@ import Image from 'next/image';
 import fayaImage from '@/assets/images/faya-image.jpg';
 import redGuyImage from '@/assets/images/redguy-image.jpg';
 import mazenImage from '@/assets/images/mazen-image.jpg';
-import sobhImage from '@/assets/images/sobh-image.JPG';
+import sobhImage from '@/assets/images/sobh-image.jpg';
 import groupImage from '@/assets/images/group-image.jpg';
 import girlImage from '@/assets/images/girl-image.jpg';
 import banwaImage from '@/assets/images/banwa-image.jpg';
